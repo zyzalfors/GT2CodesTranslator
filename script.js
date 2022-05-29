@@ -26,7 +26,7 @@ function translateCode(code, version1, version2) {
   newcode += computeOffset(newop, newcode, version1, version2);
   let part1 = newop.toString(16).padStart(2, "0");
   let part2 = newcode.toString(16).padStart(6, "0");
-  return part1.toUpperCase() + part2.toUpperCase() + rest;
+  return part1.toUpperCase() + part2.toUpperCase() + rest.toUpperCase();
  }
  return "Invalid code " + code;
 }
