@@ -1,0 +1,38 @@
+:root {
+    --back-color: #333333;
+    --text-color: #CCCCCC;
+    --font: helvetica, sans-serif;
+    --width: 200px;
+    --radius: 5px;
+}
+
+* {
+    font-family: var(--font);
+    font-size: 15px;
+    background-color: var(--back-color);
+    color: var(--text-color);
+    border-radius: var(--radius);
+}
+
+textarea {
+    border: 1px solid var(--text-color);
+    height: var(--width);
+    width: calc(var(--width) - 5px);
+    outline: none;
+    resize: none;
+}
+
+input[type=button], select {
+    border: 1px solid var(--text-color);
+    width: var(--width);
+}
+
+td {
+    width: var(--width);
+    padding: 6px;
+}
+
+input[type=button]:hover {
+    background-color: var(--text-color);
+    color: var(--back-color);
+}

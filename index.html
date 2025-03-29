@@ -2,34 +2,25 @@
 <html>
 <head>
 <meta charset="UTF-8">
-<title>Gran Turismo 2 Codes Translator (Gran Turismo/Simulation Mode)</title>
-<script src="script.js"></script>
+<title>GT2 Codes Translator</title>
+<link rel="stylesheet" type="text/css" href="style.css"/>
+<script src="script.js" defer></script>
 </head>
-Gran Turismo 2 Codes Translator (Gran Turismo/Simulation Mode)
-<br><br>
-<body style="background-color:yellow;">
-From:
-<select id="version1">
-<option value="NTSC-U1.0">NTSC-U1.0</option>
-<option value="NTSC-U1.1">NTSC-U1.1</option>
-<option value="NTSC-U1.2">NTSC-U1.2</option>
-<option value="PAL">PAL</option>
-<option value="NTSC-J">NTSC-J</option>
-</select>
-<br><br>
-<textarea wrap="off" id="version1Codes" rows="10" cols="30" style="resize: none"></textarea>
-<br><br>
-To:
-<select id="version2">
-<option value="NTSC-U1.0">NTSC-U1.0</option>
-<option value="NTSC-U1.1">NTSC-U1.1</option>
-<option value="NTSC-U1.2">NTSC-U1.2</option>
-<option value="PAL">PAL</option>
-<option value="NTSC-J">NTSC-J</option>
-</select>
-<br><br>
-<textarea wrap="off" id="version2Codes" rows="10" cols="30" style="resize: none"></textarea>
-<br><br>
-<input type="button" value="Translate" onclick="translateCodes()">
+<body>
+<table>
+    <tr>
+        <td>GT2 Codes Translator</td>
+    <tr>
+        <td>From:<select id="ver1"></select></td>
+        <td>To:<select id="ver2"></select></td>
+    </tr>
+    <tr>
+        <td><textarea id="codes1"></textarea></td>
+        <td><textarea id="codes2"></textarea></td>
+    </tr>
+    <tr>
+       <td><input type="button" value="Translate"></td>
+    </tr>
+</table>
 </body>
 </html>
